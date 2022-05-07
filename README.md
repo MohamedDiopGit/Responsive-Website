@@ -1,7 +1,8 @@
 # Site-with-JS-menu
  Responsive using CSS/HTML ,JS and PHP scripts, connection with a server, toggling menu, and dynamic icons.
  It is always updated, check it out !
- -Update :   - Restriction access for directories with .htacces/.htpasswd files
+ 
+ Update :   - Restriction access for directories with .htacces/.htpasswd files
             - Use of PHP and server for SQL request
             - Twitter API on it
 
