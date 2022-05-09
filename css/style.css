@@ -74,6 +74,12 @@
 
 }
 
+.badge-base LI-profile-badge{
+    position: relative;
+    text-align: center; 
+    z-index: 10;
+}
+
 .toggle:hover{
     transform: scale(1.3);
     transition: 0.5s;
@@ -108,8 +114,11 @@
     mix-blend-mode: overlay;
 }
 
+
+
+
 .text{
-    position: relative;
+    position: relative; 
     z-index: 10;
 }
 
