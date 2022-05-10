@@ -116,7 +116,6 @@
 
 
 
-
 .text{
     position: relative; 
     z-index: 10;
@@ -229,4 +228,13 @@
     .text h3{
         font-size: 2em;
     }
+}
+
+.container{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
