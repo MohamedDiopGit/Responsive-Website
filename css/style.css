@@ -25,7 +25,7 @@ body {
     position: absolute;
     right: 0;
     width: 100%;
-    min-height: 150vh;
+    min-height: 120vh;
     padding: 100px;
     display: flex;
     justify-content: space-between;
