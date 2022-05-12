@@ -2,3 +2,4 @@ AuthType Basic
 AuthName "Fichiers réservés"
 AuthUserFile ".htpasswd"
 Require valid-user
+AllowOverride None

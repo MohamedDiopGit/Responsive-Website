@@ -3,13 +3,12 @@
 
 
 
-* {
+*, ::before, ::after {
     box-sizing: border-box;
     margin : 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
 
 .showcase {
     position: absolute;
@@ -31,8 +30,20 @@
 }
 
 .showcase header {
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showcase footer {
+    position: absolute;
+    top: 90%;
     left: 0;
     width: 100%;
     padding: 40px 100px;
@@ -113,14 +124,18 @@
 
 .text{
     position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     z-index: 10;
 }
 
 .text h2{
     font-size: 5em;
     font-weight: 800;
-    line-height: 1em;
+    line-height: 1.4em;
     text-transform: uppercase;
+    justify-content: center;
 }
 
 
@@ -133,9 +148,9 @@
 
 .text p{
     font-size: 1.1em;
-    margin: 20px 0;
+    margin: 3em 0;
     font-weight: 400;
-    max-width: 700px;
+
 }
 
 .text a {
@@ -158,9 +173,9 @@
 .social {
     position: absolute;
     bottom: 20px;
+    left: 48%;
     z-index: 10;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -225,15 +240,6 @@
     }
 }
 
-.footer{
-    position: absolute;
-    bottom: 20px;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgb(170, 170, 175);
-}
 
 .hover-underline-animation {
     display: inline-block;
@@ -241,7 +247,7 @@
 }
   
 .hover-underline-animation:after {
-    content: '';
+    content: '👾';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
@@ -250,10 +256,26 @@
     left: 0;
     background-color: #ffffff;
     transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+    transition: transform 0.8s cubic-bezier(0, 0, 0.2, 1);
 }
   
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+
+.scroll-container {
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+  }
