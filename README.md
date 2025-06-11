@@ -1,8 +1,4 @@
-# Site-with-JS-menu
-Responsive using CSS/HTML ,JS and PHP scripts, connection with a server, toggling menu, and dynamic icons.
+# Portfolio
 
-It is always updated, check it out !
+This project is a simple responsive portfolio built with React and Tailwind CSS. It fetches GitHub repositories and displays them with basic animations. The previous vanilla JavaScript implementation and related assets have been removed.
 
-Update : - Restriction access for directories with .htacces/.htpasswd files - Use of PHP and server for SQL
-
-Take a look at the responsiveness by resizing the page and displaying the menu for example. You have some funny motion of icon when you put your mouse on it.
